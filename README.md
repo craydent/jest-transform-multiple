@@ -23,6 +23,21 @@ Configuration in package.json
 }
 ```
 
+Configuration in root jtm.config.js
+```ts
+// this file should be adjacent to package.json
+// jtm.config.js
+module.exports = string[] | {
+    modules:[
+        {
+            path:string;
+            config: object;
+        }
+    ];
+    config:object;
+}
+```
+
 ```js
 // this is the "jest" part of the package.json
 {
